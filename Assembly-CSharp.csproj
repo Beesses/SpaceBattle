@@ -62,11 +62,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BaseProjectile.cs" />
-    <Compile Include="Assets\EnemyProjectileOneScript.cs" />
+    <Compile Include="Assets\EnemyShipOneMoving.cs" />
+    <Compile Include="Assets\EnemyShipThreeMoving.cs" />
+    <Compile Include="Assets\EnemyShipTwoMoving.cs" />
+    <Compile Include="Assets\LerpExample.cs" />
+    <Compile Include="Assets\NewLerpTest.cs" />
     <Compile Include="Assets\Scripts\BaseShipScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\BaseForEnemyMoving.cs" />
     <Compile Include="Assets\Scripts\EnemyShips\BaseForEnemyShips.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\BaseProjectile.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\EnemyProjectileOneScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\EnemyProjectileThreeScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\EnemyProjectileTwoScript.cs" />
     <Compile Include="Assets\Scripts\EnemyShips\EnemyShipOneScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipThreeScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipTwoScript.cs" />
     <Compile Include="Assets\Scripts\StarsScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Пользователь/Desktop/SpaceBattle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

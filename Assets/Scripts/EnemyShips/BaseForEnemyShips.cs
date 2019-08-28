@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class BaseForEnemyShips : BaseShipScript
 {
+    [SerializeField] public List<Transform> PlacesOfPrejectiles;
     private float Look;
     public Transform target;
     private float NextFireRate = 0;
@@ -21,6 +22,14 @@ public abstract class BaseForEnemyShips : BaseShipScript
             FrRt = Random.Range(FR, FR+3);
             NextFireRate = FrRt + Time.time;
             _canAttack = true;
+        }
+    }
+    public virtual void FindAllGunPlaces()
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.name == "PlaceOfProjectile")
+                PlacesOfPrejectiles.Add(child);
         }
     }
 }

@@ -32,10 +32,13 @@ public class BaseProjectile : MonoBehaviour
     {
         Lock = Mathf.Atan2(transform.position.y - target.transform.position.y,
                             transform.position.x - target.transform.position.x) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0, 0, Lock);
+        transform.eulerAngles = new Vector3(0, 0, Lock + 90);
     }
     public virtual void AddSomeForce(float SomeSpeed, Transform target, Rigidbody2D Somerb)
     {
-        Somerb.AddForce(new Vector2(target.transform.position.x - transform.position.x, target.transform.position.y - transform.position.y) * 1f, ForceMode2D.Impulse);
+        Somerb.AddForce(new Vector2
+            (target.transform.position.x - 
+            transform.position.x, target.transform.position.y - 
+            transform.position.y) * SomeSpeed, ForceMode2D.Impulse);
     }
 }
