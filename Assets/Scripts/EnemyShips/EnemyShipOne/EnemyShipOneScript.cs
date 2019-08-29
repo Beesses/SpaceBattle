@@ -8,27 +8,18 @@ public class EnemyShipOneScript : BaseForEnemyShips
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         _projectile = Resources.Load("EnemyProjectileOne") as GameObject;
+        findSV();
         FindAllGunPlaces();
         _currentHealth = 1;
         _maxHealth = 1;
         _fireRate = 1;
+        _score = 2;
     }
     void Update()
     {
         LookAtTarget();
         Attack();
         Reload(_fireRate);
-    }
-    public override void Attack()
-    {
-        if (_canAttack)
-        {
-            _canAttack = false;
-            foreach(var e in PlacesOfPrejectiles)
-            {
-                Instantiate(_projectile, e.position, Quaternion.identity);
-            }
-            
-        }
+        CheckHealth(_currentHealth,_score);
     }
 }

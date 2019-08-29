@@ -10,6 +10,12 @@ public abstract class BaseShipScript : MonoBehaviour
     [SerializeField] private float FireRate;
     [SerializeField] private bool CanAttack;
     [SerializeField] private GameObject Projectile;
+    [SerializeField] private float Score;
+    public float _score
+    {
+        get { return Score; }
+        set { Score = value; }
+    }
     public GameObject _projectile
     {
         get { return Projectile; }
@@ -37,4 +43,12 @@ public abstract class BaseShipScript : MonoBehaviour
     }
     public abstract void Attack();
     public abstract void Reload(float FR);
+    public virtual void CheckHealth(float _currentHealth, float score)
+    {
+        if(_currentHealth <= 0)
+        {
+            //SV.ScoreValue += score;
+            Destroy(gameObject);
+        }
+    }
 }

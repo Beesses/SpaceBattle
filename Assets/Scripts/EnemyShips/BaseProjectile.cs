@@ -30,9 +30,12 @@ public class BaseProjectile : MonoBehaviour
     }
     public virtual void RotateToPlayer(Transform target)
     {
-        Lock = Mathf.Atan2(transform.position.y - target.transform.position.y,
-                            transform.position.x - target.transform.position.x) * Mathf.Rad2Deg;
-        transform.eulerAngles = new Vector3(0, 0, Lock + 90);
+        if(target != null)
+        {
+            Lock = Mathf.Atan2(transform.position.y - target.transform.position.y,
+                                transform.position.x - target.transform.position.x) * Mathf.Rad2Deg;
+            transform.eulerAngles = new Vector3(0, 0, Lock + 90);
+        }
     }
     public virtual void AddSomeForce(float SomeSpeed, Transform target, Rigidbody2D Somerb)
     {
@@ -40,5 +43,17 @@ public class BaseProjectile : MonoBehaviour
             (target.transform.position.x - 
             transform.position.x, target.transform.position.y - 
             transform.position.y) * SomeSpeed, ForceMode2D.Impulse);
+    }
+    private void SetDamage(ISetDamage obj)
+    {
+        if (obj != null)
+        {
+            obj.ApplyDamage(_damage);
+            Destroy(gameObject);
+        }
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        SetDamage(collision.GetComponent<ISetDamage>());
     }
 }
