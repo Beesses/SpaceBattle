@@ -62,29 +62,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AsteroidScript.cs" />
-    <Compile Include="Assets\LerpExample.cs" />
-    <Compile Include="Assets\NewLerpTest.cs" />
-    <Compile Include="Assets\PlayerProjectile.cs" />
-    <Compile Include="Assets\PlayerShipScript.cs" />
-    <Compile Include="Assets\ScoreScript.cs" />
-    <Compile Include="Assets\Scripts\BaseForPlayerShip.cs" />
-    <Compile Include="Assets\Scripts\BaseShipScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\BaseForEnemyMoving.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\BaseForEnemyShips.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\BaseProjectile.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipOne\EnemyProjectileOneScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipOne\EnemyShipOneMoving.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipOne\EnemyShipOneScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipThree\EnemyProjectileThreeScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipThree\EnemyShipThreeMoving.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipThree\EnemyShipThreeScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipTwo\EnemyProjectileTwoScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipTwo\EnemyShipTwoMoving.cs" />
-    <Compile Include="Assets\Scripts\EnemyShips\EnemyShipTwo\EnemyShipTwoScript.cs" />
+    <Compile Include="Assets\Pause.cs" />
+    <Compile Include="Assets\Scripts\Asteroid\AsteroidDestroy.cs" />
+    <Compile Include="Assets\Scripts\Asteroid\AsteroidScript.cs" />
+    <Compile Include="Assets\Scripts\Asteroid\BaseAsteroidScript.cs" />
+    <Compile Include="Assets\Scripts\Bonuses\BaseBonusScript.cs" />
+    <Compile Include="Assets\Scripts\Bonuses\DamageBonus.cs" />
+    <Compile Include="Assets\Scripts\Bonuses\FireRateBonus.cs" />
+    <Compile Include="Assets\Scripts\Bonuses\HealthBonus.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageble.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ISetDamage.cs" />
-    <Compile Include="Assets\Scripts\StarsScript.cs" />
+    <Compile Include="Assets\Scripts\OthersScripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\OthersScripts\StarsScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\BaseShipScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\BaseForEnemyMoving.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\BaseForEnemyShips.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\BaseProjectile.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipOne\EnemyProjectileOneScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipOne\EnemyShipOneMoving.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipOne\EnemyShipOneScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipThree\EnemyProjectileThreeScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipThree\EnemyShipThreeMoving.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipThree\EnemyShipThreeScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipTwo\EnemyProjectileTwoScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipTwo\EnemyShipTwoMoving.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\EnemyShips\EnemyShipTwo\EnemyShipTwoScript.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\PlayerScripts\BaseForPlayerShip.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\PlayerScripts\PlayerProjectile.cs" />
+    <Compile Include="Assets\Scripts\ShipsScripts\PlayerScripts\PlayerShipScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\ScoreScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Пользователь/Desktop/SpaceBattle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
