@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Pause.cs" />
     <Compile Include="Assets\Scripts\Asteroid\AsteroidDestroy.cs" />
     <Compile Include="Assets\Scripts\Asteroid\AsteroidScript.cs" />
     <Compile Include="Assets\Scripts\Asteroid\BaseAsteroidScript.cs" />
@@ -91,6 +90,7 @@
     <Compile Include="Assets\Scripts\ShipsScripts\PlayerScripts\PlayerProjectile.cs" />
     <Compile Include="Assets\Scripts\ShipsScripts\PlayerScripts\PlayerShipScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\Pause.cs" />
     <Compile Include="Assets\Scripts\UIScripts\ScoreScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Пользователь/Desktop/SpaceBattle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

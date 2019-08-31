@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -60,6 +59,10 @@ public abstract class BaseForPlayerShip : BaseShipScript, ISetDamage
     }
     public override void CheckHealth()
     {
+        if(_currentHealth >= _maxHealth)
+        {
+            _currentHealth = _maxHealth;
+        }
         if (_currentHealth <= 0)
         {
             Destroy(gameObject);

@@ -27,11 +27,11 @@ public class EnemyShipOneMoving : BaseForEnemyMoving
     }
     public override void Patrol()
     {
-        if (transform.position.x > 10)
+        if (transform.position.x > 11)
         {
             _horizontalSpeed = -_horizontalSpeed;
         }
-        if (transform.position.x < -10)
+        if (transform.position.x < -11)
         {
             _horizontalSpeed = -_horizontalSpeed;
         }
